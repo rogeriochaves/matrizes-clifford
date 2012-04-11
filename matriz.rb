@@ -1,3 +1,4 @@
+# encoding: utf-8
 def somar(a, b)
 	c = []
 	for i in 0...(a.size)
@@ -35,9 +36,9 @@ def multiplicar_matrizes(a, b)
 	c = []
 	for i in 0...(a.size)
 		c << []
-		for p in 0...(b[0].size)
+		for p in 0...(a.size)
 			r = 0
-			for k in 0...(b[0].size)
+			for k in 0...(a[0].size)
 				r += a[i][k] * b[k][p]
 			end
 			c[i] << r
@@ -143,6 +144,8 @@ end
 #puts multiplicar_por_escalar([[1,2],[3,4]],3).inspect
 
 #puts multiplicar_matrizes([[1,2],[3,4]],[[2,2],[3,4]]).inspect
+
+#print(multiplicar_matrizes( [[1, 2, 3]], [[4], [5], [6]] ));
 
 
 op = 0
